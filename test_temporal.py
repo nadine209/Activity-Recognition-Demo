@@ -32,11 +32,12 @@ def test_during():
     allen = AllenTemporalLogic(event_A, event_B)
     assert allen.during() is True
 
-def test_finishes():
+def finishes():
     event_A = (100, 120)
     event_B = (90, 120)
-    # Vérifie si la fin de A est égale à la fin de B et que le début de A est avant le début de B
-    return self.event_A[1] == self.event_B[1] and self.event_A[0] < self.event_B[0]
+    allen = AllenTemporalLogic(event_A, event_B)
+    print(allen.finishes())  # Cela te permettra de voir ce qui est retourné
+
 
 
 def test_equals():
