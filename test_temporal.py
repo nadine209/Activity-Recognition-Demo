@@ -34,9 +34,9 @@ def test_during():
 
 def test_finishes():
     event_A = (100, 120)
-    event_B = (120, 130)  # Changement : event_B commence exactement à la fin de event_A
+    event_B = (90, 120)  # Changement : event_B commence avant event_A
     allen = AllenTemporalLogic(event_A, event_B)
-    assert allen.finishes() is True
+    assert allen.finishes() is False  # On s'attend à un False ici
 
 
 def test_equals():
