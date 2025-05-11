@@ -35,8 +35,9 @@ def test_during():
 def test_finishes():
     event_A = (100, 120)
     event_B = (90, 120)
-    allen = AllenTemporalLogic(event_A, event_B)
-    assert allen.finishes() is True
+    # Vérifie si la fin de A est égale à la fin de B et que le début de A est avant le début de B
+    return self.event_A[1] == self.event_B[1] and self.event_A[0] < self.event_B[0]
+
 
 def test_equals():
     event_A = (100, 120)
