@@ -50,3 +50,5 @@ if __name__ == "__main__":
     print(f"A finishes B: {allen.finishes()}")
     print(f"A equals B: {allen.equals()}")
 
+# python temporal_rules_advanced.py
+
